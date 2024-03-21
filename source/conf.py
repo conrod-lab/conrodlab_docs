@@ -52,13 +52,13 @@ exclude_patterns = []
 html_theme = 'sphinx_rtd_theme'
 
 # tab name
-html_short_title = 'CNeuroMod'
+html_short_title = 'ConrodLab'
 
 # The logo
-html_logo = 'img/logo_neuromod_black.png'
+html_logo = 'img/conrodlablogo.jpeg'
 
 # icon
-html_favicon = 'img/logo_neuromod_small.png'
+html_favicon = 'img/conrodlablogo.jpeg'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
