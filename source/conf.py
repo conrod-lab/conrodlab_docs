@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Courtois NeuroMod'
-copyright = '2022, Courtois NeuroMod team'
-author = 'Courtois NeuroMod team'
+project = 'Conrod Lab'
+copyright = '2024, Conrod Lab team'
+author = 'Conrod Lab team'
 
 # The full version, including alpha/beta/rc tags
 release = '2020-beta'
