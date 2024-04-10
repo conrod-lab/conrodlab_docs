@@ -26,6 +26,44 @@ Other sequences were selected and optimized by the Courtois NeuroMod team.
 
 All images covering the face were anonymized by zeroing the data in the face, teeth and ears regions with a custom mask warped from the MNI space based on a linear registration of the T1w brain MRI series. This defacing script is available [here](https://github.com/courtois-neuromod/ds_prep/blob/main/mri/prepare/deface_anat.py)
 
+
+## Coventure
+
+The `Coventure` dataset is a 5 year longitudinal ...
+
+:::{important}
+Some variables are transformed from existing raw variables. 
+:::
+
+## Neuroventure
+
+The `Neuroventure` dataset is a 5 year longitudinal neuroimaging dataset, accompanied by behavioral and cognitive information acquired at each year. Participant behavioral information is acquired at each of the 5 years. The following tasks are described below
+
+
+:::{important}
+Some variables are transformed from existing raw variables. 
+:::
+
+### Stop Signal Task fMRI
+
+The `Stop Signal Task` is a functional MRI task where the participant ...
+
+:::{important}
+Notes on Stop-Signal Task: 
+Due to a `<enter type of error that results in bad files>` . Choice is left to the user whether to exclude the corresponding fMRI volumes or not for their analysis.
+:::
+
+### MID Task fMRI
+
+The `MID Task` (Monetary Incentive Delay) is a functional MRI task where the participant ... The structure of the task is as follows:
+ * `Anticipation` corresponded to the phase of the trial where the participant receives information on ...
+
+:::{important}
+Notes on MID Task: 
+Due to a `<enter type of error that results in bad files>` . Choice is left to the user whether to exclude the corresponding fMRI volumes or not for their analysis.
+:::
+
+
 ## hcptrt
 
 This `cneuromod` dataset is called HCP test-retest (`hcptrt`), because participants repeated 15 times the functional localizers developed by the Human Connectome Project, for a total of approximately 10 hours of functional data per subject. The protocol consisted of seven tasks, described below (text adapted from the [HCP protocol](http://protocols.humanconnectome.org/HCP/3T/task-fMRI-protocol-details.html)). Before each task, participants were given detailed instructions and examples, as well as a practice run. A session was typically composed either of two repetitions of the HCP localizers, or one resting-state run and one HCP localizer. The e-prime scripts for preparation and presentation of the stimuli can be found in the [HCP database](https://db.humanconnectome.org/app/action/ChooseDownloadResources?project=HCP_Resources&resource=Scripts&filePath=HCP_TFMRI_scripts.zip). Stimuli and e-prime scripts were provided by the Human Connectome Project, U-Minn Consortium (Principal Investigators: David Van Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for Neuroscience Research, and by the McDonnell Center for Systems Neuroscience at Washington University. Note that in the `cneuromod` DataLad, functional runs are named `func_sub-<participant>_ses-<sess>_task-<task>_run-<run>`, where the `<participant>` tag includes `sub-01` to `sub-06`. For each functional run, a companion file `_events.tsv` contains the timing and type of events presented to the subject. Session tags `<sess>` are `001`, `002` etc, and the number and composition of sessions vary from subject to subject. The `<task>` tags are `restingstate`, `gambling`, `motor`, `social`, `wm`, `emotion`, `language` and `relational`, as described below. Tasks that were repeated twice have separate `<run>` tags (`01`, `02`).
